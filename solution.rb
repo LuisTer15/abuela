@@ -5,7 +5,7 @@ get '/' do
 end
 
 get '/abuela' do
-	if params[:text2] == params[:text].upcase 
+	if params[:text] == params[:text].upcase 
 		@respuesta = "Ahhh si, manzanas!"
 		erb :abuela
 	else
